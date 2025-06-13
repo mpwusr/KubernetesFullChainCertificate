@@ -1,4 +1,4 @@
-## 1. 📄 What You Need
+## 1.  What You Need
 # You should collect the full PEM-encoded chain, e.g.:
 
 ```
@@ -15,7 +15,7 @@ openshift-full-chain.crt:
 This should mirror what's sent in TLS handshake — sometimes you’ll need to stitch this manually using OpenShift CA + issuer certs.
 ```
 ## How to Use It
-# A. 🧪 Verify Full Chain Works (CLI Test)
+# A.  Verify Full Chain Works (CLI Test)
 ```
 curl --cacert openshift-full-chain.crt https://api.<cluster>:6443/version
 ```
@@ -28,7 +28,7 @@ curl --cacert openshift-full-chain.crt https://api.<cluster>:6443/version
   ...
 }
 ```
-# B. 🔧 Java: Trust Full Chain
+# B.  Java: Trust Full Chain
 # You can use a .crt file containing the entire chain. Here’s how to build a TrustManager:
 
 ```
